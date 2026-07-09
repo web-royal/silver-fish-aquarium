@@ -1,1 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
+body{
+    background:white;
+}
+
+
+/* HEADER */
+
+header{
+    position:absolute;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 5%;
+    z-index:10;
+    color:white;
+}
+
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+
+.logo span{
+    display:block;
+}
+
+
+.logo small{
+    color:#00bfff;
+    letter-spacing:4px;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:16px;
+}
+
+
+.icons{
+    font-size:22px;
+}
+
+
+
+/* HERO SECTION */
+
+.hero{
+
+height:780px;
+
+background:
+linear-gradient(
+90deg,
+rgba(0,10,40,0.85),
+rgba(0,0,0,0.25)
+),
+url("file_000000006fd471fd8a1e6e2a5a0b7a5f.png");
+
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+
+padding-left:6%;
+
+position:relative;
+overflow:hidden;
+
+}
+
+
+
+.content{
+
+color:white;
+max-width:520px;
+
+}
+
+
+
+.content h3{
+
+font-size:35px;
+font-style:italic;
+color:#00c8ff;
+
+}
+
+
+
+.content h1{
+
+font-size:70px;
+letter-spacing:3px;
+
+}
+
+
+
+.content h2{
+
+font-size:55px;
+font-weight:400;
+color:#00aaff;
+
+}
+
+
+
+.content p{
+
+font-size:20px;
+line-height:1.6;
+margin:25px 0;
+
+}
+
+
+
+button{
+
+background:#00a9e8;
+border:none;
+padding:18px 35px;
+border-radius:8px;
+color:white;
+font-size:16px;
+cursor:pointer;
+
+}
+
+
+
+/* BUBBLES */
+
+.bubbles span{
+
+position:absolute;
+bottom:-100px;
+width:25px;
+height:25px;
+background:white;
+opacity:.4;
+border-radius:50%;
+
+animation:bubble 8s infinite;
+
+}
+
+
+.bubbles span:nth-child(1){
+left:20%;
+}
+
+.bubbles span:nth-child(2){
+left:40%;
+animation-delay:2s;
+}
+
+.bubbles span:nth-child(3){
+left:60%;
+animation-delay:4s;
+}
+
+.bubbles span:nth-child(4){
+left:80%;
+animation-delay:1s;
+}
+
+
+
+@keyframes bubble{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(-900px);
+opacity:0;
+}
+
+}
+
+
+
+/* WHY CHOOSE SECTION */
+
+
+.choose{
+
+padding:50px 5%;
+text-align:center;
+
+}
+
+
+.choose h1{
+
+font-size:40px;
+color:#06244c;
+
+}
+
+
+
+.cards{
+
+display:flex;
+justify-content:center;
+gap:35px;
+margin-top:50px;
+flex-wrap:wrap;
+
+}
+
+
+
+.cards div{
+
+width:180px;
+
+}
+
+
+
+.cards div:first-child{
+
+font-size:35px;
+
+}
+
+
+
+.cards h3{
+
+margin-top:15px;
+
+}
+
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+display:none;
+}
+
+
+.content h1{
+font-size:45px;
+}
+
+
+.content h2{
+font-size:35px;
+}
+
+
+.hero{
+height:700px;
+}
+
+}
