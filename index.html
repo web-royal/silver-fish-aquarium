@@ -1,55 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Silver Fish Aquarium</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
 
-
 <header>
+    <div class="logo">
+        🐟 <span>SILVER FISH</span>
+        <small>AQUARIUM</small>
+    </div>
 
-<div class="logo">
-🐟 SILVER FISH
-<span>AQUARIUM</span>
-</div>
-
-
-<nav>
-
-<a href="#home">Home</a>
-<a href="#about">About Us</a>
-<a href="#shop">Shop</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#shop">Shop</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 
-
+<!-- HOME SECTION -->
 
 <section id="home" class="hero">
 
+<picture>
+    <source media="(max-width:768px)" srcset="aquarium-mobile.png">
+    <img src="aquarium-desktop.png" alt="Silver Fish Aquarium">
+</picture>
 
-<div class="hero-text">
+
+<div class="hero-content">
 
 <h3>Dive into Beauty</h3>
 
 <h1>SILVER FISH</h1>
 
 <h2>AQUARIUM</h2>
-
 
 <p>
 From vibrant gold fish to stunning colour widow,
@@ -61,40 +57,73 @@ find everything for your perfect aquarium.
 DISCOVER MORE →
 </a>
 
-
 </div>
-
 
 </section>
 
 
 
+<!-- ABOUT SECTION -->
 
-
-<section id="about">
+<section id="about" class="about">
 
 <h1>About Us</h1>
 
 <p>
-Silver Fish Aquarium provides beautiful aquarium fishes,
-aquarium tanks and quality products for beginners and professionals.
+Welcome to Silver Fish Aquarium, your destination for beautiful
+aquarium fishes, accessories and complete aquarium solutions.
+We provide healthy fishes and quality products for beginners
+and aquarium lovers.
 </p>
 
 </section>
 
 
 
+<!-- WHY CHOOSE US -->
 
+<section class="choose">
 
-<section id="shop">
+<h1>Why Choose Us?</h1>
 
-<h1>Our Shop</h1>
 
 <div class="cards">
 
-<div>🐠 Gold Fish</div>
-<div>🐟 Colour Widow</div>
-<div>🌿 Aquarium Plants</div>
+
+<div class="card">
+🐟
+<h3>Healthy Fish</h3>
+<p>Guaranteed</p>
+</div>
+
+
+<div class="card">
+⭐
+<h3>Wide Variety</h3>
+<p>Always Fresh</p>
+</div>
+
+
+<div class="card">
+🧪
+<h3>Quality Products</h3>
+<p>You Can Trust</p>
+</div>
+
+
+<div class="card">
+👨‍🔧
+<h3>Expert Advice</h3>
+<p>For Beginners & Pros</p>
+</div>
+
+
+<div class="card">
+📦
+<h3>Safe Packaging</h3>
+<p>Fast Delivery</p>
+</div>
+
 
 </div>
 
@@ -102,38 +131,37 @@ aquarium tanks and quality products for beginners and professionals.
 
 
 
+<!-- SHOP -->
 
+<section id="shop" class="simple">
 
-<section id="services">
-
-<h1>Our Services</h1>
+<h1>Our Shop</h1>
 
 <p>
-Aquarium setup, fish care guidance,
-maintenance and accessories.
+Explore different types of fishes, aquariums and accessories.
 </p>
 
 </section>
 
 
 
+<!-- SERVICES -->
 
+<section id="services" class="simple">
 
-<section id="gallery">
+<h1>Services</h1>
 
-<h1>Gallery</h1>
-
-<img src="images/aquarium.png">
-
+<p>
+Aquarium setup, maintenance and fish care guidance.
+</p>
 
 </section>
 
 
 
+<!-- CONTACT -->
 
-
-
-<section id="contact">
+<section id="contact" class="simple">
 
 <h1>Contact Us</h1>
 
@@ -142,10 +170,6 @@ Visit Silver Fish Aquarium for your dream aquarium.
 </p>
 
 </section>
-
-
-
-<script src="script.js"></script>
 
 
 </body>
