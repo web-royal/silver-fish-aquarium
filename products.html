@@ -1,1 +1,365 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Silver Fish Aquarium</title><style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
 
+    body{
+        font-family:Arial, sans-serif;
+        background:#f4f4f4;
+        color:#111;
+    }
+
+    /* HEADER */
+    .header{
+        background:#03152b;
+        color:white;
+        text-align:center;
+        padding:20px;
+    }
+
+    .header h1{
+        font-size:32px;
+        margin-bottom:5px;
+    }
+
+    .header p{
+        color:#cfe8ff;
+        font-size:14px;
+    }
+
+    /* MAIN CONTAINER */
+    .container{
+        max-width:1200px;
+        margin:auto;
+        padding:25px 15px 40px;
+    }
+
+    /* BACK BUTTON */
+    .back-btn{
+        display:inline-block;
+        background:#03152b;
+        color:white;
+        text-decoration:none;
+        padding:12px 20px;
+        border-radius:8px;
+        margin-bottom:25px;
+        font-weight:bold;
+    }
+
+    .back-btn:hover{
+        background:#052347;
+    }
+
+    /* TITLE */
+    .title{
+        text-align:center;
+        margin-bottom:30px;
+    }
+
+    .title h2{
+        font-size:32px;
+        color:#03152b;
+        margin-bottom:10px;
+    }
+
+    .title p{
+        color:#555;
+        font-size:15px;
+    }
+
+    /* PRODUCT GRID */
+    .product-grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+        gap:20px;
+    }
+
+    /* PRODUCT CARD */
+    .product-card{
+        background:white;
+        border-radius:12px;
+        overflow:hidden;
+        box-shadow:0 2px 10px rgba(0,0,0,0.08);
+        transition:0.3s;
+    }
+
+    .product-card:hover{
+        transform:translateY(-4px);
+    }
+
+    .product-card img{
+        width:100%;
+        height:200px;
+        object-fit:cover;
+        display:block;
+    }
+
+    .product-content{
+        padding:15px;
+    }
+
+    .product-content h3{
+        color:#03152b;
+        margin-bottom:8px;
+        font-size:18px;
+    }
+
+    .product-content p{
+        color:#555;
+        font-size:14px;
+        line-height:1.5;
+    }
+
+    /* CONTACT SECTION */
+    .contact{
+        background:white;
+        margin-top:35px;
+        padding:25px;
+        border-radius:12px;
+        text-align:center;
+        box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .contact h3{
+        color:#03152b;
+        margin-bottom:10px;
+    }
+
+    .contact p{
+        color:#555;
+        margin-bottom:20px;
+    }
+
+    .btns{
+        display:flex;
+        justify-content:center;
+        gap:12px;
+        flex-wrap:wrap;
+    }
+
+    .whatsapp{
+        background:#25D366;
+        color:white;
+        text-decoration:none;
+        padding:12px 22px;
+        border-radius:8px;
+        font-weight:bold;
+    }
+
+    .call{
+        background:#03152b;
+        color:white;
+        text-decoration:none;
+        padding:12px 22px;
+        border-radius:8px;
+        font-weight:bold;
+    }
+
+    /* MOBILE */
+    @media(max-width:768px){
+        .header h1{
+            font-size:26px;
+        }
+
+        .title h2{
+            font-size:28px;
+        }
+
+        .product-card img{
+            height:180px;
+        }
+    }
+</style>
+
+</head><body><!-- HEADER -->
+<div class="header">
+    <h1>Silver Fish Aquarium</h1>
+    <p>Explore our fishes, aquarium products and accessories</p>
+</div>
+
+<div class="container">
+
+    <!-- BACK BUTTON -->
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <!-- PAGE TITLE -->
+    <div class="title">
+        <h2>Explore Our Products</h2>
+        <p>Healthy fishes, aquarium essentials and decorative items available at our shop.</p>
+    </div>
+
+    <!-- PRODUCT GRID -->
+    <div class="product-grid">
+
+        <!-- 1 -->
+        <div class="product-card">
+            <img src="aquarium-desktop.png" alt="Goldfish">
+            <div class="product-content">
+                <h3>Goldfish</h3>
+                <p>Healthy and colorful goldfish for home aquariums.</p>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="product-card">
+            <img src="aquarium-desktop.png" alt="Flowerhorn">
+            <div class="product-content">
+                <h3>Flowerhorn</h3>
+                <p>Popular premium aquarium fish with beautiful colors.</p>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="product-card">
+            <img src="aquarium-desktop.png" alt="Guppy">
+            <div class="product-content">
+                <h3>Guppy</h3>
+                <p>Small, active and beginner-friendly aquarium fish.</p>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="product-card">
+            <img src="aquarium-desktop.png" alt="Molly">
+            <div class="product-content">
+                <h3>Molly</h3>
+                <p>Peaceful freshwater fish suitable for community tanks.</p>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="product-card">
+            <img src="aquarium-desktop.png" alt="Zebra">
+            <div class="product-content">
+                <h3>Zebra</h3>
+                <p>Hardy zebra fish with attractive striped patterns.</p>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="product-card">
+            <img src="aquarium-desktop.png" alt="Oscar">
+            <div class="product-content">
+                <h3>Oscar</h3>
+                <p>Large intelligent aquarium fish for spacious tanks.</p>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="product-card">
+            <img src="aquarium-desktop.png" alt="Angel Fish">
+            <div class="product-content">
+                <h3>Angel Fish</h3>
+                <p>Elegant freshwater fish with graceful fins.</p>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="product-card">
+            <img src="aquarium-desktop.png" alt="Betta">
+            <div class="product-content">
+                <h3>Betta</h3>
+                <p>Vibrant fighting fish available in multiple colors.</p>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="product-card">
+            <img src="aquarium-mobile.png" alt="Premium Fish Food">
+            <div class="product-content">
+                <h3>Premium Fish Food</h3>
+                <p>Nutritious pellets and flakes for daily feeding.</p>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="product-card">
+            <img src="aquarium-mobile.png" alt="Baby Fish Food">
+            <div class="product-content">
+                <h3>Baby Fish Food</h3>
+                <p>Special food designed for small and baby fish.</p>
+            </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="product-card">
+            <img src="aquarium-desktop.png" alt="Aquarium Tank">
+            <div class="product-content">
+                <h3>Aquarium Tank</h3>
+                <p>Glass aquariums available in different sizes.</p>
+            </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="product-card">
+            <img src="aquarium-mobile.png" alt="Filter">
+            <div class="product-content">
+                <h3>Filter</h3>
+                <p>Efficient water filtration systems for clean aquariums.</p>
+            </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="product-card">
+            <img src="aquarium-mobile.png" alt="Oxygen Pump">
+            <div class="product-content">
+                <h3>Oxygen Pump</h3>
+                <p>Reliable air pumps to maintain proper oxygen levels.</p>
+            </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="product-card">
+            <img src="logo.png" alt="Gravel and Sand">
+            <div class="product-content">
+                <h3>Gravel & Sand</h3>
+                <p>Colorful gravel, sand and aquarium stones for tank decoration.</p>
+            </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="product-card">
+            <img src="logo.png" alt="Artificial Plants">
+            <div class="product-content">
+                <h3>Artificial Plants</h3>
+                <p>Beautiful artificial plants for a natural aquarium look.</p>
+            </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="product-card">
+            <img src="logo.png" alt="Buddha Decoration">
+            <div class="product-content">
+                <h3>Buddha Decoration</h3>
+                <p>Decorative Buddha statues and aquarium ornaments.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact">
+        <h3>Need Product Information?</h3>
+        <p>Contact Silver Fish Aquarium for fish availability, prices and aquarium setup guidance.</p>
+
+        <div class="btns">
+            <a href="https://wa.me/919974411053" class="whatsapp">
+                Chat on WhatsApp
+            </a>
+
+            <a href="tel:+919974411053" class="call">
+                Call 9974411053
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
