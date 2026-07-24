@@ -41,7 +41,7 @@ padding:20px 5%;
 .logo-text span {
     display: block;
     color: #ffffff; /* Clear, bright white */
-    font-size: 38px; /* Increased font size */
+    font-size: 48px; /* Increased font size */
     font-weight: bold;
     line-height: 1.2;
 }
@@ -49,10 +49,11 @@ padding:20px 5%;
 .logo-text small {
     display: block;
     color: #00bfff; /* Bright neon blue */
-    font-size: 18px; /* Slightly larger for readability */
+    font-size: 24px; /* Increased font size */
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+
 
 /* --- Mobile Responsive Styles (Screen sizes 768px and smaller) --- */
 @media (max-width: 768px) {
